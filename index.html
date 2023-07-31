@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,111 +12,343 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        h1, h2, h3 {
+        
+        p2{
+            margin-bottom: 5px;
+            color: #ffffff;
+            
+
+        }
+
+        h1,
+        h2,
+        h3 {
             margin-bottom: 10px;
         }
+
         p {
             margin-bottom: 5px;
         }
+
         .section {
             margin-bottom: 30px;
         }
+
+        /* Estilos para el encabezado */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        p1 {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+
+        p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Estilos para las secciones */
+        .section {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para la lista de habilidades y cursos */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animación para los títulos h2 */
+        section {
+            position: relative;
+            cursor: pointer;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #007bff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        h2:hover::before {
+            width: 50%;
+        }
+
+        /* Animación de resaltado al pasar el mouse sobre las secciones */
+        .section:hover {
+            background-color: hsl(122, 91%, 79%);
+            transition: background-color 1s ease-in-out;
+        }
+
+        /* Estilo para el enlace de redes sociales */
+        .social-link {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-link img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        /* Animación para los enlaces de redes sociales */
+        .social-link img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-link:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Animación para las imágenes de tecnología */
+        .tech-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .tech-image:hover {
+            transform: rotate(360deg) scale(1.2);
+        }
+
+
+
+
+        /* Estilo para el contenido de la página */
+        .container {
+            position: relative;
+            z-index: 1;
+            /* Asegurarse de que el contenido esté por encima del fondo animado */
+            padding: 20px;
+        }
+
+
+
+        .section {
+            background-color: #f9f9f9;
+            /* Cambiar el color de fondo de la sección 1 */
+            padding: 20px;
+            /* Ajustar el espaciado interno de la sección 1 */
+            border: 1px solid #ccc;
+            /* Agregar un borde a la sección 1 */
+            border-radius: 5px;
+            /* Redondear las esquinas del borde */
+        }
+
+        header {
+            background-color: #f9f9f9;
+            /* Cambiar el color de fondo de la sección 1 */
+            padding: 20px;
+            /* Ajustar el espaciado interno de la sección 1 */
+            border: 1px solid #ccc;
+            /* Agregar un borde a la sección 1 */
+            border-radius: 5px;
+            /* Redondear las esquinas del borde */
+        }
+
+        #galaxyVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Emil Alfonso Gil Hernández</h1>
-        <p>Software Quality Engineer, Data Scientist</p>
-        <p>Francisco Moreno 10, Bella Vista - Santo Domingo - Dominican Republic</p>
-        <p>+1 (829) 707 0102 - emilalfonsogil@gmail.com</p>
-        <p>Social Media ->  <a href="https://www.linkedin.com/in/emil-alfonso-gil-hern%C3%A1ndez-42314a200/ "> LinkedIn </a>,  <a href="https://github.com/DeejayEmil"> GitHub </a> </p>
-       
-    </header>
 
-    <section class="section">
-        <h2>My name is Emil Gil, based on my previous experience and college career I could be considered multiple things... </h2>
-        <p>You could call me a Software Engineer, a Software Quality Engineer, a Validations and Project Quality Engineer, a Mechatronics Engineer, a Data Scientist, etc. </p>
-        <p>However, Tech Enthusiast is what I identify with the most.</p>
-        <p>I am an experienced Engineer with demonstrated history and great experience in Software Quality, Python Programming, Data Analysis, Problem Solving, Machine Learning algorithms and Project Management.</p>
-    </section>
+    <!-- Video de fondo de galaxia en movimiento -->
+    <video autoplay muted loop id="galaxyVideo">
+        <source src="C:\Users\plata\Desktop\Engineering\Software Engineering\galaxy.mp4" type="video/mp4">
+        <source src="C:\Users\plata\Desktop\Engineering\Software Engineering\galaxy.ogg" type="video/ogg">
+    </video>
 
-    <section class="section">
-        <h2>Education</h2>
-        <p><strong> - Miguel Hernandez University of Elche, Spain</strong></p>
-        <p><em>Statistics and Data Science - 2024</em> </p>
-        <p>The Master that is proposed is of interest to all those students with a degree in which they have received training in statistics, mathematics or computer science, and who wish to continue their studies to receive advanced multidisciplinary training that enables them to make decisions. from the information and/or knowledge that can be extracted from data sets, including the Big Data paradigm. In particular, the Master will provide them with the skills and competencies to participate in the entire decision-making process based on data; from the acquisition of the data, its processing and its treatment, to its analysis and the extraction of information/knowledge from them, to conclude with the generation and/or analysis of alternatives in decision-making. In this sense, the Master provides advanced knowledge in the field of mathematics, statistics, computer science and artificial intelligence, which allow responding to the growing demand of organizations to make decisions based on the information and/or knowledge that is extracted from the data.</p>        
 
-        <p><strong> - INTEC (Santo Domingo Institute of Technology)</strong></p>
-        <p><em>Mechatronics, Robotics and Automation Engineering - 2021</em></p>
-        <p>A mechatronic engineer is a professional with the skills required to apply control systems, specialized mechanisms, programming and other engineering tools, with which he creates, maintains and updates, devices with the degree of intelligence, which allows them to perform tangible tasks, efficiently and autonomously, either in whole or in part.</p>
-    </section>
 
-    <section class="section">
-        <h2>Work Experience</h2>
-        <p><strong>Jabil Healthcare/Jabil Circuit</strong></p>
-        <p>Junior Computer Software Validation Specialist, Oct 2022 - Present</p>
-        <p>Ensure that the requirements from ISO 13485, QSR
-            Part 820 and 11, Annex 11 related with control of Software and
-            Validation Master Plan for Software are properly followed. Validate
-            new software applications for manufacturing execution systems. Design automated test scripts using Selenium. Design of enterprise application using Microsoft Power Apps.</p>
 
-        <p><strong>Convatec</strong></p>
-        <p>Quality Engineer I, Jun 2021 - Oct 2022</p>
-        <p>Execute, review and approve Process and Equipment
-            Validation Protocols (IQ, OQ, PQ, MSA, TMV). Validate and
-            periodically review quality testing equipment. Validate new
-            manufacturing processes.</p>
+    <div class="background"></div> <!-- Mover la animación del fondo al comienzo del body -->
+    <div class="container">
+        <header>
+            <h1>Emil Alfonso Gil Hernández</h1>
+            <p1><strong>Quality Engineer, Data Scientist</strong></p1>
 
-        <p><strong>Plasticos Multiform</strong></p>
-        <p>Maintenance Technician, Jan 2021 - Jun 2021</p>
-        <p>Execute Preventive and Corrective maintenance of
-            Site's equipment. Create and document maintenance reports.
-            Installment of new equipment.</p>       
-    </section>
+            <p1 align="center">
+                <pre>Francisco Moreno 10, Bella Vista - Santo Domingo - Dominican Republic
 
-    <section class="section">
-        <h2>Skills</h2>
+<strong>Contact -></strong> +1 (829) 707 0102 - emilalfonsogil@gmail.com
+
+<strong>Social Media -></strong><a href="https://www.linkedin.com/in/emil-alfonso-gil-hern%C3%A1ndez-42314a200/ " target="_blank"> LinkedIn </a>, <a href="https://github.com/DeejayEmil" target="_blank"> GitHub </a>
+
+            </pre>
+            </p1>
+
+        </header>
+
+        <section class="section">
+            <h2>My name is Emil Gil, based on my previous experience and college career I could be considered multiple
+                things... </h2>
+            <p>You could call me a Software Engineer, a Software Quality Engineer, a Validations and Project Quality
+                Engineer, a Mechatronics Engineer, a Data Scientist, etc. </p>
+            <p>However, Tech Enthusiast is what I identify with the most.</p>
+            <p>I am an experienced Engineer with demonstrated history and great experience in Software Quality, Python
+                Programming, Data Analysis, Problem Solving, Machine Learning algorithms and Project Management.</p>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <p><strong> - Miguel Hernandez University of Elche, Spain</strong></p>
+            <p><em>Statistics and Data Science - 2024</em> </p>
+            <p>The Master that is proposed is of interest to all those students with a degree in which they have
+                received
+                training in statistics, mathematics or computer science, and who wish to continue their studies to
+                receive
+                advanced multidisciplinary training that enables them to make decisions. from the information and/or
+                knowledge that can be extracted from data sets, including the Big Data paradigm. In particular, the
+                Master
+                will provide them with the skills and competencies to participate in the entire decision-making process
+                based on data; from the acquisition of the data, its processing and its treatment, to its analysis and
+                the
+                extraction of information/knowledge from them, to conclude with the generation and/or analysis of
+                alternatives in decision-making. In this sense, the Master provides advanced knowledge in the field of
+                mathematics, statistics, computer science and artificial intelligence, which allow responding to the
+                growing
+                demand of organizations to make decisions based on the information and/or knowledge that is extracted
+                from
+                the data.</p>
+
+            <p><strong> - INTEC (Santo Domingo Institute of Technology)</strong></p>
+            <p><em>Mechatronics, Robotics and Automation Engineering - 2021</em></p>
+            <p>A mechatronic engineer is a professional with the skills required to apply control systems, specialized
+                mechanisms, programming and other engineering tools, with which he creates, maintains and updates,
+                devices
+                with the degree of intelligence, which allows them to perform tangible tasks, efficiently and
+                autonomously,
+                either in whole or in part.</p>
+        </section>
+
+        <section class="section">
+            <h2>Work Experience</h2>
+            <p><strong>Jabil Healthcare/Jabil Circuit</strong></p>
+            <p>Junior Computer Software Validation Specialist, Oct 2022 - Present</p>
+            <p>Ensure that the requirements from ISO 13485, QSR
+                Part 820 and 11, Annex 11 related with control of Software and
+                Validation Master Plan for Software are properly followed. Validate
+                new software applications for manufacturing execution systems. Design automated test scripts using
+                Selenium.
+                Design of enterprise application using Microsoft Power Apps.</p>
+
+            <p><strong>Convatec</strong></p>
+            <p>Quality Engineer I, Jun 2021 - Oct 2022</p>
+            <p>Execute, review and approve Process and Equipment
+                Validation Protocols (IQ, OQ, PQ, MSA, TMV). Validate and
+                periodically review quality testing equipment. Validate new
+                manufacturing processes.</p>
+
+            <p><strong>Plasticos Multiform</strong></p>
+            <p>Maintenance Technician, Jan 2021 - Jun 2021</p>
+            <p>Execute Preventive and Corrective maintenance of
+                Site's equipment. Create and document maintenance reports.
+                Installment of new equipment.</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
             <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>R</li>
-            <li>Matlab</li>
-            <li>C++</li>
-            <li>Visual Basic</li>
-            <li>Excel</li>
-            <li>Selenium</li>
-            <!-- Agrega más habilidades según sea necesario -->
-        </ul>
-    </section>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>R</li>
+                <li>Matlab</li>
+                <li>C++</li>
+                <li>Visual Basic</li>
+                <li>Excel</li>
+                <li>Selenium</li>
+                <!-- Agrega más habilidades según sea necesario -->
+            </ul>
+        </section>
 
-    <section class="section">
-        <h2>Courses and Certifications</h2>
+        <section class="section">
+            <h2>Courses and Certifications</h2>
             <ul>
-            <li>Advanced Python</li>
-            <li>Google Data Analytics</li>
-            <li>Duolingo English Test - Score 135</li>
-            <li>Project Management Basics</li>
-            <li>Six Sigma Yellow Belt</li>
-            <li>DELF B2</li>
-            <!-- Agrega más habilidades según sea necesario -->
-        </ul>
-    </section>
+                <li>Advanced Python</li>
+                <li>Google Data Analytics</li>
+                <li>Duolingo English Test - Score 135</li>
+                <li>Project Management Basics</li>
+                <li>Six Sigma Yellow Belt</li>
+                <li>DELF B2</li>
+                <!-- Agrega más habilidades según sea necesario -->
+            </ul>
+        </section>
 
 
 
-    <section class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#">Robotic Arm Development</a> - Robotic arm capable of playing the game of guessing the cup containing the ball.</li>
-            <li><a href="#">Autonomous Wheelchair for Enclosed Spaces</a> - Autonomous wheelchair capable of moving to the desired point on a map built from a LIDAR sensor..</li>
-            <li><a href="#">Development of Mobile Controlled Power Outlet</a> - Programmable power outlet through an android application in which it could be turned on or off, limited based on maximum current and programmed to turn on or off based on a schedule.</li>
-        </ul>
-    </section>
+        <section class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=J2XSVb8d5uk&t=611s" target="_blank">Robotic Arm Development</a> - Robotic arm capable of playing the game of guessing the
+                    cup
+                    containing the ball.</li>
+                <li><a href="#" target="_blank">Autonomous Wheelchair for Enclosed Spaces</a> - Autonomous wheelchair capable of moving
+                    to
+                    the desired point on a map built from a LIDAR sensor..</li>
+                <li><a href="#" target="_blank">Development of Mobile Controlled Power Outlet</a> - Programmable power outlet through an
+                    android application in which it could be turned on or off, limited based on maximum current and
+                    programmed to turn on or off based on a schedule.</li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>Thanks for visiting my website. If you desire to visualize a PDF version of my Curriculum Vitae, let me know.</p>
-    </footer>
+        <footer>
+            <p2>Thanks for visiting my website. If you desire to visualize a PDF version of my Curriculum Vitae, let me
+                know.
+            </p2>
+        </footer>
+    </div>
+    
 </body>
+
 </html>
