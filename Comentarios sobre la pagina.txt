@@ -1,0 +1,3 @@
+Intentar hacer la pagina de manera interactiva que tenga dos versiones, una dinamica y una estatica, 
+La dinamica va a tener mas colores y alegria, efectos e imageneS.
+La estatica sera mas aburrida y tendra mas blanco y negro.
